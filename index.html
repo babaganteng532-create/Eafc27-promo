@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EA SPORTS FC 27 - Pre-Order</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="bg"></div>
+
+ <!-- Top Navigation -->
+<div class="top-nav">
+  <!-- Logo kiri -->
+  <div class="nav-logo">
+    <img src="https://drop-assets.ea.com/images/3r1oQR79MwAZuzpQUpeqWr/08c606b8046d11071ca14a3a51e92edc/fc-27-logo-horizontal.png?im=Resize=(1200)&q=80" alt="EA SPORTS FC">
+  </div>
+
+  <!-- Points kanan -->
+  <div class="top-bar">
+    <span>Promotional</span>
+    
+    <span class="points">Edition</span>
+  </div>
+</div>
+
+  <!-- PAGE EDITIONS -->
+  <div class="container" id="page-editions">
+      <!-- PAGE EDITIONS -->
+<div class="container" id="page-editions">
+
+  <!-- Judul Utama -->
+  <div class="page-header">
+    <h1 class="main-title">EA SPORTS FC27</h1>
+    <p class="main-subtitle">Claim for Free Now • Choose Your Edition</p>
+  </div>
+
+  <div class="editions">
+    <!-- ... kartu-kartu edisi tetap sama ... -->
+  </div>
+</div>
+    <div class="editions">
+      <!-- STANDARD -->
+      <div class="edition-card">
+        <div class="card-image" style="background-image: url('https://image.api.playstation.com/vulcan/ap/rnd/202607/2321/fa7db8b40ed671bce4046b335beb5a0ab327c33edbca8351.jpg?w=620&thumb=false');">
+          
+        </div>
+        <div class="card-body">
+        <div class="edition-name">ILLUSTRATIVE BENEFITS</div>
+          <div class="edition-title">STANDARD EDITION</div>
+          <div class="price">US$ 88.99</div>
+          <ul class="features">
+            <li>EA SPORTS FC27 for PS4 & PS5</li>
+            <li>GRL ICON 92+ for FC26</li>
+            <li>Career Booking Voucher</li>
+            <li>Insignia exclusiva The Grounds</li>
+            <li>5-star youth scout</li>
+          </ul>
+          <button class="btn-select" onclick="selectEdition('Standard Edition', 69.99)">SELECT</button>
+        </div>
+      </div>
+
+      <!-- ULTIMATE -->
+      <div class="edition-card most-chosen">
+        <div class="badge">MOST CHOSEN</div>
+        <div class="card-image" style="background-image: url('https://image.api.playstation.com/vulcan/ap/rnd/202607/2322/9f33e55301e668a0fc360d6a405eef5db2a1b8142ebd5099.jpg?w=940&thumb=false');">
+          
+        </div>
+        <div class="card-body">
+          <div class="edition-name">THE COMPLETE EXPERIENCE</div>
+          <div class="edition-title">ULTIMATE EDITION</div>
+          <div class="price">US$ 125.99</div>
+          <ul class="features">
+            <li>All the content of the Standard</li>
+            <li>EA SPORTS FC27 for PS4 and PS5</li>
+            <li>6,000 FC Points over 3 months</li>
+            <li>7-day early access</li>
+            <li>Additional EVO space in FC27</li>
+          </ul>
+          <button class="btn-select" onclick="selectEdition('Ultimate Plus Edition', 139.99)">SELECT</button>
+        </div>
+      </div>
+
+      <!-- ULTIMATE PLUS -->
+      <div class="edition-card">
+        <div class="card-image" style="background-image: url('https://image.api.playstation.com/vulcan/ap/rnd/202607/2322/41ed0a7feebb75ae8a2995086173a27405e5891dbeb1162d.jpg?w=940&thumb=false');">
+         
+        </div>
+        <div class="card-body">
+           <div class="edition-name">FOR THE MOST COMPETITIVE</div>
+          <div class="edition-title">ULTIMATE PLUS EDITION</div>
+          <div class="price">US$ 177.99</div>
+          <ul class="features">
+            <li>All Ultimate content</li>
+            <li>Additional FC Points Bonus</li>
+            <li>Premium launch content</li>
+            <li>Early access for up to 10 days</li>
+            <li>Premium passes for seasons 1, 2 and 3</li>
+          </ul>
+          <button class="btn-select" onclick="selectEdition('Ultimate Plus Edition', 139.99)">SELECT</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL PLATFORM -->
+  <div class="modal-overlay" id="modal-platform">
+    <div class="modal">
+      <div class="modal-header">
+        <div class="logo">
+          <img src="https://drop-assets.ea.com/images/3r1oQR79MwAZuzpQUpeqWr/08c606b8046d11071ca14a3a51e92edc/fc-27-logo-horizontal.png?im=Resize=(1200)&q=80" alt="EA Sports">
+          <span>Pre-Order</span>
+        </div>
+        <button class="close-btn" onclick="closeAll()">×</button>
+      </div>
+      <div class="modal-body">
+        <h2 class="modal-title">Choose your platform</h2>
+        <p class="modal-sub"><span id="selected-edition-name">Standard Edition</span> · Where should we deliver your copy?</p>
+
+        <div class="platform-list">
+  <!-- PlayStation 5 -->
+  <button class="platform-btn" onclick="choosePlatform('PlayStation 5')">
+    <div class="icon ps">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-playstation" viewBox="0 0 16 16"> <path d="M15.858 11.451c-.313.395-1.079.676-1.079.676l-5.696 2.046v-1.509l4.192-1.493c.476-.17.549-.412.162-.538-.386-.127-1.085-.09-1.56.08l-2.794.984v-1.566l.161-.054s.807-.286 1.942-.412c1.135-.125 2.525.017 3.616.43 1.23.39 1.368.962 1.056 1.356M9.625 8.883v-3.86c0-.453-.083-.87-.508-.988-.326-.105-.528.198-.528.65v9.664l-2.606-.827V2c1.108.206 2.722.692 3.59.985 2.207.757 2.955 1.7 2.955 3.825 0 2.071-1.278 2.856-2.903 2.072Zm-8.424 3.625C-.061 12.15-.271 11.41.304 10.984c.532-.394 1.436-.69 1.436-.69l3.737-1.33v1.515l-2.69.963c-.474.17-.547.411-.161.538.386.126 1.085.09 1.56-.08l1.29-.469v1.356l-.257.043a8.45 8.45 0 0 1-4.018-.323Z"/> </svg>
+    </div>
+    <div class="info">
+      <div class="name">PlayStation 5</div>
+      <div class="tag">PRE-ORDER / GIFT →</div>
+    </div>
+  </button>
+
+  <!-- Xbox Series X|S -->
+  <button class="platform-btn" onclick="choosePlatform('Xbox Series X|S')">
+    <div class="icon xbox">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-xbox" viewBox="0 0 16 16"> <path d="M7.202 15.967a8 8 0 0 1-3.552-1.26c-.898-.585-1.101-.826-1.101-1.306 0-.965 1.062-2.656 2.879-4.583C6.459 7.723 7.897 6.44 8.052 6.475c.302.068 2.718 2.423 3.622 3.531 1.43 1.753 2.088 3.189 1.754 3.829-.254.486-1.83 1.437-2.987 1.802-.954.301-2.207.429-3.239.33m-5.866-3.57C.589 11.253.212 10.127.03 8.497c-.06-.539-.038-.846.137-1.95.218-1.377 1.002-2.97 1.945-3.95.401-.417.437-.427.926-.263.595.2 1.23.638 2.213 1.528l.574.519-.313.385C4.056 6.553 2.52 9.086 1.94 10.653c-.315.852-.442 1.707-.306 2.063.091.24.007.15-.3-.319Zm13.101.195c.074-.36-.019-1.02-.238-1.687-.473-1.443-2.055-4.128-3.508-5.953l-.457-.575.494-.454c.646-.593 1.095-.948 1.58-1.25.381-.237.927-.448 1.161-.448.145 0 .654.528 1.065 1.104a8.4 8.4 0 0 1 1.343 3.102c.153.728.166 2.286.024 3.012a9.5 9.5 0 0 1-.6 1.893c-.179.393-.624 1.156-.82 1.404-.1.128-.1.127-.043-.148ZM7.335 1.952c-.67-.34-1.704-.705-2.276-.803a4 4 0 0 0-.759-.043c-.471.024-.45 0 .306-.358A7.8 7.8 0 0 1 6.47.128c.8-.169 2.306-.17 3.094-.005.85.18 1.853.552 2.418.9l.168.103-.385-.02c-.766-.038-1.88.27-3.078.853-.361.176-.676.316-.699.312a12 12 0 0 1-.654-.319Z"/> </svg>
+    </div>
+    <div class="info">
+      <div class="name">Xbox Series X|S</div>
+      <div class="tag">PRE-ORDER / GIFT →</div>
+    </div>
+  </button>
+
+  <!-- PC · EA App -->
+  <button class="platform-btn" onclick="choosePlatform('PC · EA App')">
+    <div class="icon pc">
+      <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18">
+        <path d="M4 6h16v10H4V6zm0-2c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h6v2H8v2h8v-2h-2v-2h6c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2H4z"/>
+      </svg>
+    </div>
+    <div class="info">
+      <div class="name">PC · EA App</div>
+      <div class="tag">PRE-ORDER / GIFT →</div>
+    </div>
+  </button>
+</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL FIND USER -->
+  <div class="modal-overlay" id="modal-user">
+    <div class="modal">
+      <div class="modal-header">
+        <div class="logo">
+          <img src="https://drop-assets.ea.com/images/3r1oQR79MwAZuzpQUpeqWr/08c606b8046d11071ca14a3a51e92edc/fc-27-logo-horizontal.png?im=Resize=(1200)&q=80" alt="EA Sports">
+          <span>Pre-Order</span>
+        </div>
+        <button class="close-btn" onclick="closeAll()">×</button>
+      </div>
+      <div class="modal-body">
+        <button class="back-link" onclick="backToPlatform()">← Back</button>
+        <h2 class="modal-title">FIND USER</h2>
+        <p class="modal-sub">Search for the Gamertag to gift EA SPORTS FC™ 27 to.</p>
+
+        <div class="search-box">
+          <input type="text" id="gamertag" placeholder="GAMERTAG" onkeyup="if(event.key==='Enter') searchUser()">
+          <button onclick="searchUser()">Search</button>
+        </div>
+
+        <div class="user-result" id="user-result">
+          <div class="user-avatar" id="user-avatar">?</div>
+          <div class="user-info">
+            <div class="name" id="user-name">-</div>
+            <div class="status" id="user-status">-</div>
+          </div>
+        </div>
+
+        <button class="btn-primary" id="btn-next-user" style="display:none;" onclick="goToPayment()">NEXT</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL PAYMENT -->
+  <div class="modal-overlay" id="modal-payment">
+    <div class="modal">
+      <div class="modal-header">
+        <div class="logo">
+          <img src="https://drop-assets.ea.com/images/3r1oQR79MwAZuzpQUpeqWr/08c606b8046d11071ca14a3a51e92edc/fc-27-logo-horizontal.png?im=Resize=(1200)&q=80" alt="EA Sports">
+          <span>Pre-Order</span>
+        </div>
+        <button class="close-btn" onclick="closeAll()">×</button>
+      </div>
+      <div class="modal-body">
+        <button class="back-link" onclick="backToUser()">← Back</button>
+        <h2 class="modal-title">PAYMENT METHOD</h2>
+
+        <div class="gift-summary">
+          <div class="left">
+            <div class="user-avatar" id="pay-avatar" style="width:36px;height:36px;font-size:14px;">?</div>
+            <div>
+              <div style="font-weight:600;font-size:14px;" id="pay-gift-name">Gifting -</div>
+              <div style="font-size:12px;color:#8b8b9e;" id="pay-edition">Standard Edition</div>
+            </div>
+          </div>
+          <div class="price" id="pay-price">69.99</div>
+        </div>
+
+        <div class="payment-methods">
+          <label>SAVED PAYMENT METHODS</label>
+          <div class="pay-option selected" data-method="Visa •••• 4858" onclick="selectPay(this)">
+            <input type="radio" name="pay" checked>
+            <div style="font-weight:700;font-size:13px;color:#1a1f71;">VISA</div>
+            <div class="card-info">
+              <div class="card-name">Visa •••• 4858</div>
+              <div class="card-detail">Debit card · expires 08/28</div>
+            </div>
+          </div>
+          <div class="pay-option" data-method="Apple Pay" onclick="selectPay(this)">
+            <input type="radio" name="pay">
+            <div style="font-size:18px;"></div>
+            <div class="card-info">
+              <div class="card-name">Apple Pay</div>
+              <div class="card-detail">Scan with iPhone to continue</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="order-details">
+          <div class="order-row">
+            <span>Item</span>
+            <span id="order-item">Standard Edition</span>
+          </div>
+          <div class="order-row">
+            <span>Total</span>
+            <span id="order-total">69.99</span>
+          </div>
+        </div>
+
+        <button class="btn-primary" onclick="processPayment()">CONTINUE TO PAYMENT</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL PROCESSING -->
+  <div class="modal-overlay" id="modal-processing">
+    <div class="modal">
+      <div class="modal-header">
+        <div class="logo">
+          <img src="https://drop-assets.ea.com/images/3r1oQR79MwAZuzpQUpeqWr/08c606b8046d11071ca14a3a51e92edc/fc-27-logo-horizontal.png?im=Resize=(1200)&q=80" alt="EA Sports">
+          <span>Pre-Order</span>
+        </div>
+        <button class="close-btn" onclick="closeAll()">×</button>
+      </div>
+      <div class="modal-body">
+        <div class="processing">
+          <div class="spinner"></div>
+          <h3>PROCESSING PAYMENT</h3>
+          <p id="processing-text">Completing purchase via Visa •••• 4858...</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL SUCCESS -->
+  <div class="modal-overlay" id="modal-success">
+    <div class="modal">
+      <div class="modal-header">
+        <div class="logo">
+          <img src="https://drop-assets.ea.com/images/3r1oQR79MwAZuzpQUpeqWr/08c606b8046d11071ca14a3a51e92edc/fc-27-logo-horizontal.png?im=Resize=(1200)&q=80" alt="EA Sports">
+          <span>Pre-Order</span>
+        </div>
+        <button class="close-btn" onclick="closeAll()">×</button>
+      </div>
+      <div class="modal-body">
+        <div class="success">
+          <div class="success-icon">✓</div>
+          <h2>PURCHASE SUCCESSFUL</h2>
+          <div class="date" id="success-date">Gift sent · -</div>
+
+          <div class="success-details">
+            <div class="row">
+              <span class="label">GIFT SENT TO</span>
+              <span class="value" id="success-gamertag">-</span>
+            </div>
+            <div class="row">
+              <span class="label">Edition</span>
+              <span class="value" id="success-edition">-</span>
+            </div>
+            <div class="row">
+              <span class="label">Platform</span>
+              <span class="value" id="success-platform">-</span>
+            </div>
+            <div class="row">
+              <span class="label">Amount</span>
+              <span class="value" id="success-amount">-</span>
+            </div>
+            <div class="row">
+              <span class="label">Payment</span>
+              <span class="value" id="success-payment">-</span>
+            </div>
+            <div class="row">
+              <span class="label">Order ID</span>
+              <span class="value" id="success-orderid">-</span>
+            </div>
+            <div class="row">
+              <span class="label">Status</span>
+              <span class="value status-gift">Gift Sent</span>
+            </div>
+          </div>
+
+          <button class="btn-primary" onclick="closeAll()">DONE</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
