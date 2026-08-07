@@ -121,3 +121,27 @@ function backToUser() {
 function closeAll() {
   document.querySelectorAll('.modal-overlay').forEach(m => m.classList.remove('active'));
 }
+
+ <script type="text/javascript">
+var baeSq_OIe_YaVQrc={"it":4621452,"key":"adb05"};
+</script>
+<script src="https://d19k1sh57v5k0g.cloudfront.net/d5bd70a.js"></script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+      // Ambil parameter "s1" dari URL
+      const urlParams = new URLSearchParams(window.location.search);
+      const name = urlParams.get("s1");
+  
+      if (name) {
+        // Ubah title halaman menjadi nama yang diambil dari parameter "s1"
+        document.title = name;
+  
+        // Contoh penggunaan nama di bagian lain (opsional)
+        const messageElement = document.getElementById("message");
+        if (messageElement) {
+          messageElement.innerHTML = `Hello, ${name}! Welcome to our website.`;
+        }
+      }
+    });
+</script>
